@@ -56,5 +56,22 @@ describe("Interface", () => {
         };
         console.info(person.sayHello("Kurnia"));
     });
+    // intersection type
+    it("should support intersection type", () => {
+        const domain = {
+            id: "1",
+            name: "Fandi",
+        };
+        console.info(domain);
+    });
+    // type assertions
+    it("should support type assertions", () => {
+        const person = {
+            name: "Fandi",
+            age: 27,
+        };
+        const person2 = person;
+        console.info(person2);
+    });
 });
 export {};
